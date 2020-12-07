@@ -30,6 +30,7 @@
             <?if ($arItem["IS_PARENT"]):?>
 
             <?if ($arItem["DEPTH_LEVEL"] == 1):?>
+
             <li><a href="<?=$arItem["LINK"]?>"  <?=($menu_class ? 'class= "'.$menu_class.'" ':' ' )?>><span><?=$arItem["TEXT"]?></span></a>
                 <ul>
 
@@ -39,12 +40,16 @@
                     ?>
 
                     <?else:?>
+
                     <li><a href="<?=$arItem["LINK"]?>"><?=$arItem["TEXT"]?></a>
-                        <ul> <?
+                        <ul>
+
+                            <?
                             $menu_text = trim($APPLICATION->GetDirProperty('menu_text', $arItem["LINK"]));
                             if($menu_text) echo'<div class="menu-text">'.$menu_text.'</div>';
                             ?>
                             <?endif?>
+
 
                             <?else:?>
 
@@ -59,6 +64,7 @@
                                 <?endif?>
 
                             <?endif?>
+
 
                             <?$previousLevel = $arItem["DEPTH_LEVEL"];?>
 

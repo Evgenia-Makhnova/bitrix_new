@@ -52,6 +52,7 @@
             </td>
         </tr>
     </table>
+
     <?$APPLICATION->IncludeComponent(
 	"bitrix:menu", 
 	"top_menu", 
