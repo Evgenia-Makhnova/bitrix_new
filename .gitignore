@@ -12,12 +12,11 @@ Thumbs.db
 ._.DS_Store
 
 bitrix/activities/
-bitrix/admin/
+
 bitrix/blocks/
 bitrix/.settings.php
 bitrix/fonts/
 bitrix/templates/landing24/
-bitrix/backup/
 bitrix/click.php
 bitrix/components/*
 !bitrix/components/olegpro/
